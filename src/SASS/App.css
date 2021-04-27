@@ -5,11 +5,44 @@
           box-sizing: border-box;
 }
 
+/*-------------------------------------------NavBar--------------------------------*/
 .navbar {
   background-color: blue;
 }
 
+.navbar .link {
+  text-decoration: none;
+  color: black;
+}
+
 .navbar .navbar-nav {
   margin-right: 200px;
+  font-weight: bold;
+}
+
+.navbar .navbar-nav li {
+  margin-right: 50px;
+  border-bottom: solid transparent 3px;
+}
+
+.navbar .navbar-nav li .link {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar .navbar-nav li .link:focus {
+  border-bottom: solid blue 3px;
+}
+
+.navbar .profile {
+  font-weight: bold;
+}
+
+/*------------------------------------------------Home---------------------------------------*/
+.home {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background-color: #bdbdf1;
 }
 /*# sourceMappingURL=App.css.map */
