@@ -3,9 +3,9 @@ import {Link} from 'react-router-dom';
 
 const Navbar = () =>
 {
-    return(<>
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
-      <span>Let's Hire</span>
+    return(<>{ 
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <span className="logo">Let's Hire</span>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -18,9 +18,20 @@ const Navbar = () =>
               <Link className="link" to="/catogries">Catogries</Link>
             </li>
           </ul>
-        <div className="profile"> <Link className="link" to="/register">Login</Link></div>
+        <div className="profile">
+          <div><img src="https://picsum.photos/201/300/"/></div>
+           <Link className="link" to="/register">Login</Link>
+           </div>
       </div>
-    </nav>
+    </nav>}
+
+    <div className="container">
+      <div className="row">
+        <div className="col">
+          
+        </div>
+      </div>
+    </div>
     </>)
 }
 export default Navbar;
